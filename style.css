@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(199, 10, 128);
+    color:rgb(251, 203, 10);
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.calculator {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.output {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100px;
+    width: 400px;
+    background-color: rgb(89, 6, 150);
+    padding: 0px 20px;
+    gap: 8px;
+}
+
+.current-operand {
+    font-size: 35px;
+}
+
+.previous-operrand {
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 500px;
+    width: 400px;
+}
+
+.btn-num, .btn-operator, .clear, .delete, .equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(89, 6, 150);
+    border: 1px solid rgb(251, 203, 10);
+    transition: 0.2s;
+}
+
+.btn-operator, .clear, .delete {
+    background-color: rgb(55, 226, 213);
+    color:rgb(89, 6, 150)
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 2;
+    background-color: rgb(245, 88, 123);
+}
+
+.btn-num:hover {
+    background-color: rgb(59, 6, 150);
+}
+
+.btn-num:active {
+    background-color: rgb(44, 6, 150);
+}
+
+.btn-operator:hover, .clear:hover, .delete:hover {
+    background-color: rgb(50, 196, 213);
+}
+
+.btn-operator:active, .clear:active, .delete:active {
+    background-color: rgb(55, 181, 213);
+}
+
+.equal:hover {
+    background-color: rgb(245, 58, 123);
+}
+
+.equal:active {
+    background-color: rgb(245, 43, 123);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fa-github {
+    color: var(--font);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}

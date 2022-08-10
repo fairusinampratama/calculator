@@ -47,7 +47,7 @@ body {
     width: 400px;
 }
 
-.btn-num, .btn-operator, .clear, .delete, .equal {
+.btn-num, .btn-operator, .clear, .delete, .equal, .decimal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,11 +70,11 @@ body {
     background-color: rgb(245, 88, 123);
 }
 
-.btn-num:hover {
+.btn-num:hover, .decimal:hover {
     background-color: rgb(59, 6, 150);
 }
 
-.btn-num:active {
+.btn-num:active, .decimal:active {
     background-color: rgb(44, 6, 150);
 }
 

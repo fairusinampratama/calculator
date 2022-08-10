@@ -1,2 +1,2 @@
 # Calculator
-preview: https://fairusinampratama.github.io/calculator/
+Live preview: https://github.com/fairusinampratama/calculator.git

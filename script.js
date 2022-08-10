@@ -167,7 +167,3 @@ function handleDelete() {
     currentOperand.textContent = previousNum;
   }
 }
-
-
-
-

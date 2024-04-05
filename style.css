@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(192, 139, 92);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 201, 74);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(121, 84, 88);
+  width: 400px;
+  height: 500px;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(69, 63, 120);
+  height: 180px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 48px;
+  justify-content: center;
+  align-items: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.display {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.keypad {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  height: 470px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+#nil {
+  display: flex;
+  width: 185px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 87.5px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(69, 63, 120);
+}
+
+#decimal {
+  background-color: rgb(69, 63, 120);
+  color: rgb(255, 201, 74);
+}
+
+.key,
+.operator,
+.extra {
+  transition: background-color 0.002s ease-in-out 0.01s;
+}
+
+#decimal:hover,
+.key:hover {
+  background-color: rgb(192, 139, 92);
+}
+
+#decimal:focus,
+#decimal:active,
+.key:focus,
+.key:active {
+  background-color: rgb(69, 63, 120);
+}
+
+.operator {
+  background-color: rgb(215, 75, 118);
+}
+
+.operator:hover {
+  background-color: rgb(251, 109, 72);
+}
+
+.operator:focus,
+.operator:active {
+  background-color: rgb(215, 75, 118);
+}
+
+.extra {
+  background-color: rgb(251, 139, 36);
+  color: rgb(154, 3, 30);
+}
+
+.extra:hover {
+  background-color: rgb(227, 100, 20);
+}
+
+.extra:focus,
+.extra:active {
+  background-color: rgb(251, 139, 36);
+}
